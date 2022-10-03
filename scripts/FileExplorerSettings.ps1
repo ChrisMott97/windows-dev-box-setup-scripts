@@ -2,7 +2,7 @@
 #--- Windows Features ---
 # Show hidden files, Show protected OS files, Show file extensions
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
-
+Disable-GameBarTips
 #--- File Explorer Settings ---
 # will expand explorer to the actual folder you're in
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name NavPaneExpandToCurrentFolder -Value 1
